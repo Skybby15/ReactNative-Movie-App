@@ -34,7 +34,6 @@ A cross-platform mobile app built with React Native, Expo, and NativeWind, allow
 
 ---
 <img src="https://github.com/user-attachments/assets/2a5d3e81-fff2-4bdf-89d0-e8dcca5f959f" width="300" />
-<img src="https://github.com/user-attachments/assets/c26fbb80-6be9-4d33-984e-879d9ca3ac2e" width="300" />
 <img src="https://github.com/user-attachments/assets/4b46a7d9-4c10-4d5c-9520-66bd20a532ba" width="300" />
 <img src="https://github.com/user-attachments/assets/467b83a2-991a-4d30-bb75-55a6c09de0b7" width="300" />
 <img src="https://github.com/user-attachments/assets/56503435-2f5d-49ce-b97d-2d006b57a61e" width="300" />
