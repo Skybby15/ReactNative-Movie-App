@@ -4,6 +4,10 @@ import { Tabs } from "expo-router";
 import React from "react";
 import { Image, ImageBackground, Text, View } from "react-native";
 
+import { useAuth } from "@/context/AuthContext";
+import { Redirect } from "expo-router";
+
+
 const TabIcon = ({focused, icon, title}: any) => {
 
     if(focused){
@@ -38,7 +42,10 @@ const TabIcon = ({focused, icon, title}: any) => {
 }
 
 const _Layout = () => {
+    const { session } = useAuth()!;
+
     return(
+        !session ? <Redirect href={'/login'}/> :
         <Tabs
             screenOptions={{
                 tabBarShowLabel:false,
@@ -50,6 +57,7 @@ const _Layout = () => {
                 },
                 tabBarStyle: {
                     backgroundColor: "#0f0D23",
+                    borderColor: "#0f0D23",
                     borderRadius: 50,
                     marginHorizontal: 20,
                     marginBottom: 36,

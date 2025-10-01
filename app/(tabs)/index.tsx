@@ -51,7 +51,7 @@ export default function Index() {
             className="mt-10 self-center"
           />
         ) : moviesError || trendingError ? (
-          <Text>Error: {moviesError?.message || trendingError?.message}</Text>
+          <Text>Error: {(moviesError as Error)?.message || (trendingError as Error)?.message}</Text>
         ) : (
           <View
           className="flex-1 mt-5"
@@ -80,6 +80,7 @@ export default function Index() {
                   keyExtractor={(item) => item.movie_id.toString()}
                   ItemSeparatorComponent={() => <View className="w-4"/>}
                   className="mb-4 mt-3"
+                  ListFooterComponent={<View className="w-10"/>}
                 />
               </View>
             )}
